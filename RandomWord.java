@@ -6,16 +6,16 @@ public class RandomWord {
 
     public static void main(String[] args) {
 
-        float i = 1;
-        String chosen_word = "";
+        double i = 1;
+        String chosenWord = "";
 
         while (!StdIn.isEmpty()) {
             String word = StdIn.readString();
-            if(StdRandom.bernoulli(1/i)) { 
-                chosen_word = word;
+            if (StdRandom.bernoulli(1/i)) { 
+                chosenWord = word;
             }
             i = i + 1;
         }
-        StdOut.println(chosen_word);
+        StdOut.println(chosenWord);
     }
 }
